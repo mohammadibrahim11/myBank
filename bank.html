@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1 class="text-5xl text-center font-mediun  m-8">Lets get some  <span class="font-bold text-orange-600"> Money</span></h1>
+    </header>
+    <main>
+   <section>
+    <div class="grid grid-cols-3 gap-4 text-white w-6/12 mx-auto">
+       
+        <div class="bg-green-400   rounded-sm  py-3 pl-2  ">
+                <h4 class="text-3xl  capitalize ">
+                  deposit
+                </h4>  
+                <h2 class="text-3xl" >$<span id="deposite-total">00</span></h2>                
+        </div>
+        <div class="bg-green-500  rounded-sm py-3 pl-2  ">
+                <h4 class="text-3xl  capitalize ">
+                    withdraw
+                </h4>  
+                <h2 class="text-3xl ">$<span id="withdraw-total">00</span> </h2>                
+        </div>
+        <div class="bg-green-400  rounded-sm pl-2 py-3 ">
+                <h4 class="text-3xl  capitalize ">
+                    balance
+                </h4>  
+              <h2 class="text-3xl ">$<span id="balance-total">1190</span> </h2>                
+        </div>
+
+  
+    </div>
+   </section>
+
+   <section class="mt-12">
+    <div class="grid grid-cols-2 gap-4  w-6/12 mx-auto">
+       
+      
+        <div class="bg-indigo-400  rounded-sm px-8 py-3 rounded-sm  ">
+                <h4 class="text-3xl text-center text-white  capitalize ">
+                   please deposit
+                </h4>  
+                  
+                
+                <div class=" mx-auto" >
+                
+            
+                  <input class="w-9/12 mx-auto block text-sm px-2 mb-2 mt-2 rounded-sm" type="text" name="" id="depositfield" placeholder="$amount you want to deposit">
+ 
+                <div class=" flex justify-center pb-2 pt-2">
+                 <button class="bg-orange-400 px-6 py-1 text-base font-semibold capitalize rounded-sm text-white  " id="deposit-btn" >
+                   deposit
+                  </button>
+                </div>
+             </div>
+        </div>
+        <div class="bg-indigo-500 rounded-sm px-8 py-3 rounded-sm ">
+                <h4 class="text-3xl text-center text-white capitalize ">
+                   please withdraw
+                </h4>   
+                <div class=" mx-auto" >
+                
+            
+                    <input class="w-9/12 mx-auto block text-sm px-2 mb-2 mt-2 rounded-sm" type="text" name="" id="withdrawfield" placeholder="$amount you want to withdraw">
+   
+                  <div class=" flex justify-center pb-2 pt-2">
+                   <button class="bg-orange-400 px-6 py-1 text-base font-semibold capitalize rounded-sm text-white  " id="withdraw-btn">
+                      withdraw
+                    </button>
+                  </div>
+               </div>              
+        </div>
+
+  
+    </div>
+   </section>
+    </main>
+
+    <script src="javascript/deposit.js"></script>
+    <script src="javascript/withdraw.js"></script>
+</body>
+</html>
