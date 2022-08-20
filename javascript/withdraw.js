@@ -21,7 +21,14 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
 
     const newBalanceTotal = previousBalnaceTotal - withdrawFieldAmount;
     balnaceTotalElement.innerText = newBalanceTotal;
+    
+// if(withdrawTotalAmount <= newBalanceTotal){
 
+//      console.log(newBalanceTotal);
+      
+// }else{
+//     alert('invalid')
+// }
  
 
 
